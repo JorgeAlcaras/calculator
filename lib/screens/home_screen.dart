@@ -17,7 +17,16 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: Column(children: [
+          Container(
+            color: Colors.grey[300],
+            height: 1.2,
+            width: double.infinity,
+          ),
           Results(),
+          Container(
+            height: sizeHeight / 36,
+            width: double.infinity,
+          ),
           Keyboard(),
         ]),
       ),

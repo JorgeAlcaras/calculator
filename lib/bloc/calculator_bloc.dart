@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:calculator/bloc/calculator_state.dart';
-import 'package:calculator/helperstry/evaluate_postfix.dart';
-import 'package:calculator/helperstry/infix_to_postfix_convertion.dart';
+import 'package:calculator/helpers/evaluate_postfix.dart';
+import 'package:calculator/helpers/infix_to_postfix_convertion.dart';
 import 'package:meta/meta.dart';
 
 part 'calculator_event.dart';

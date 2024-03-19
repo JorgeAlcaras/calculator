@@ -1,11 +1,16 @@
 class Node<T> {
-  T? data;
+  T _data;
   Node<T>? _next;
 
-  Node(this.data, [this._next]);
+  Node(this._data, [this._next]);
 
-  getData() {
-    return data;
+  Nodo(T data) {
+    _data = data;
+    _next = null;
+  }
+
+  T getData() {
+    return _data;
   }
 
   setNext(Node<T> node) {
@@ -18,6 +23,6 @@ class Node<T> {
 
   @override
   String toString() {
-    return 'Node{value: $data, next: $_next}';
+    return 'Node{value: $_data, next: $_next}';
   }
 }

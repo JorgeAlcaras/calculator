@@ -1,29 +1,33 @@
 import 'Node.dart';
 
-class Stack<T> {
-  Node<T>? top;
-  
+class CustomStack<T> {
+  Node<T> _top = Node<T>(null as T);
 
-  void push(value) {
-    Node<T> node = Node(value);
-    if(top != null) {
-      node.setNext(top!);
-    }
-    top = node;
+  @override
+  String toString() {
+    return 'Stack{top: ${_top.toString()} }';
+  }
+
+  void push(T value) {
+    Node<T> node = Node<T>(value);
+    node.setNext(_top);
+    _top = node;
   }
 
   Node<T>? pop() {
     Node<T>? current;
-    if(top?.getNext() != null) {
-      current = top;
-      top = top?.getNext();
+    if (_top.getNext() != null) {
+      current = _top;
+      _top = _top.getNext();
     }
     return current;
   }
 
   Node<T>? peek() {
-    return top;
+    return _top;
   }
 
-  bool get isEmpty => top == null;
+  bool get isEmpty => _top == null;
+
+  bool get isNotEmpty => _top != null;
 }

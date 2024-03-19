@@ -13,9 +13,17 @@ class Keyboard extends StatelessWidget {
         children: [
           Row(
             children: [
-              FunctionsButton(action: '10^x'),
-              FunctionsButton(action: 'e^x'),
-              FunctionsButton(action: 'asin'),
+              CustomButton(
+                  print: '10^x',
+                  fontSize: 13,
+                  expression: '10^',
+                  color: Colors.blueAccent),
+              CustomButton(
+                  print: 'e^x',
+                  fontSize: 14,
+                  expression: 'exp',
+                  color: Colors.blueAccent),
+              FunctionsButton(action: 'asen'),
               FunctionsButton(action: 'acos'),
               FunctionsButton(action: 'atan'),
             ],
@@ -24,14 +32,18 @@ class Keyboard extends StatelessWidget {
             children: [
               FunctionsButton(action: 'log'),
               FunctionsButton(action: 'ln'),
-              FunctionsButton(action: 'sin'),
+              FunctionsButton(action: 'sen'),
               FunctionsButton(action: 'cos'),
               FunctionsButton(action: 'tan'),
             ],
           ),
           Row(
             children: [
-              OperatorButton(action: '√'),
+              CustomButton(
+                  print: '√',
+                  fontSize: 14,
+                  expression: 'sqrt',
+                  color: Colors.blueAccent),
               OperatorButton(action: '('),
               OperatorButton(action: ')'),
               OperatorButton(action: '^'),
