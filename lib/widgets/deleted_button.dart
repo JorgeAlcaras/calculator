@@ -22,8 +22,9 @@ class DeleteButton extends StatelessWidget {
             calculatorBloc.add(DeleteElement());
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.deepOrangeAccent,
+            //backgroundColor: Colors.deepOrangeAccent,
             foregroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(253, 180, 191, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

@@ -1,6 +1,6 @@
+import 'package:calculator/bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:calculator/bloc/bloc.dart';
 
 class EqualButton extends StatefulWidget {
   EqualButton({super.key});
@@ -24,8 +24,10 @@ class _EqualButtonState extends State<EqualButton> {
             calculatorBloc.add(Calculate());
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blueGrey,
+            //backgroundColor: Colors.blueGrey,
             foregroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(165, 238, 160, 1),
+            //backgroundColor: Color.fromRGBO(165, 238, 160, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

@@ -19,8 +19,9 @@ class NumberButton extends StatelessWidget {
         ElevatedButton(
           onPressed: () => calculatorBloc.add(AddElement(number)),
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.lightBlueAccent,
+            //backgroundColor: Colors.lightBlueAccent,
             foregroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(165, 238, 160, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

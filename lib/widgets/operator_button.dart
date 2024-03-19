@@ -23,8 +23,9 @@ class OperatorButton extends StatelessWidget {
             calculatorBloc.add(AddElement(action));
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blueAccent,
+            //backgroundColor: Colors.blueAccent,
             foregroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(196, 218, 250, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

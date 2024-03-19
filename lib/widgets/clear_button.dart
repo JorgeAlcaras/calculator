@@ -21,8 +21,9 @@ class ClearButton extends StatelessWidget {
             calculatorBloc.add(Clear());
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.redAccent,
+            //backgroundColor: Colors.redAccent,
             foregroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(229, 125, 144, 1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
