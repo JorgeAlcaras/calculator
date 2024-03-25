@@ -1,4 +1,4 @@
-import 'package:calculator/widgets/button_widget/button.dart';
+import 'package:calculator/button_widget/button.dart';
 import 'package:flutter/material.dart';
 
 class DeleteButton extends Button {
@@ -7,7 +7,7 @@ class DeleteButton extends Button {
     required Color color,
   }) : super(
           action: '',
-          function: 'delete',
+          function: 'Delete',
           fontSize: 18,
           color: color,
           label: '⌫',
@@ -17,7 +17,7 @@ class DeleteButton extends Button {
   Widget build(BuildContext context) {
     return Button(
       action: '',
-      function: 'delete',
+      function: 'Delete',
       fontSize: 18,
       color: color,
       label: '⌫',

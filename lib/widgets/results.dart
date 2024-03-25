@@ -14,9 +14,9 @@ class Results extends StatelessWidget {
           child: Column(
             children: [
               ExpressionDisplay(print: state.infixExpression),
-              Divider(),
+              Container(height: 1, color: Colors.grey[500]),
               ExpressionDisplay(print: state.postfixExpression),
-              Divider(),
+              Container(height: 1, color: Colors.grey[500]),
               ExpressionDisplay(print: state.postfixResult),
             ],
           ),

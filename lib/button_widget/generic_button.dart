@@ -1,4 +1,4 @@
-import 'package:calculator/widgets/button_widget/button.dart';
+import 'package:calculator/button_widget/button.dart';
 import 'package:flutter/material.dart';
 
 class GenericButton extends Button {

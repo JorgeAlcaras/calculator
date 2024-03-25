@@ -1,4 +1,4 @@
-import 'package:calculator/keyboard/keyboard.dart';
+import 'package:calculator/keyboard/keyboard2.dart';
 import 'package:calculator/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -9,11 +9,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final sizeWidth = MediaQuery.of(context).size.width;
     final sizeHeight = MediaQuery.of(context).size.height;
+    final size = MediaQuery.of(context).size;
+    final sizeHeightAppBar = AppBar().preferredSize.height;
+    [1, 2, 3, 4].map((number) => Text(number.toString()));
 
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.calculate),
-        title: Text('Calculator'),
+        title: Text('$size'),
       ),
       body: Center(
         child: Column(children: [
@@ -23,11 +26,7 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
           ),
           Results(),
-          Container(
-            height: sizeHeight / 36,
-            width: double.infinity,
-          ),
-          Keyboard(),
+          KeyboardSecond(),
         ]),
       ),
     );

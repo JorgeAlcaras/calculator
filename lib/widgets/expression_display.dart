@@ -8,22 +8,25 @@ class ExpressionDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final sizeHeight = MediaQuery.of(context).size.height;
-    final sizeWidth = MediaQuery.of(context).size.width;
+    final double sizeHeight =
+        (MediaQuery.of(context).size.height - 75) * (2 / 13);
+    final double sizeWidth = MediaQuery.of(context).size.width;
+    final padding = MediaQuery.of(context).size.width / 56.5;
+
+    final fontSize = sizeWidth / 20;
 
     return Container(
-      padding: const EdgeInsets.all(10),
-      width: double.infinity,
-      height: sizeHeight / 8.25,
+      padding: EdgeInsets.all(3),
+      height: sizeHeight,
       alignment: Alignment.centerRight,
       child: Column(
         children: [
           TextFieldTapRegion(
             child: AutoSizeText(
               '$print',
-              style: TextStyle(fontSize: sizeHeight / 20.65, height: 0.9),
+              style: TextStyle(fontSize: 40, height: 0.9),
               maxLines: 2,
-              minFontSize: 20,
+              minFontSize: 35,
               maxFontSize: 40,
               overflow: TextOverflow.ellipsis,
             ),

@@ -1,13 +1,13 @@
-import 'package:calculator/widgets/button_widget/button.dart';
+import 'package:calculator/button_widget/button.dart';
 import 'package:flutter/material.dart';
 
-class EqualButton extends Button {
-  const EqualButton({
+class EqualButton1 extends Button {
+  const EqualButton1({
     super.key,
     required Color color,
   }) : super(
           action: '',
-          function: 'equal',
+          function: 'Equal',
           fontSize: 18,
           color: color,
           label: '=',
@@ -17,8 +17,8 @@ class EqualButton extends Button {
   Widget build(BuildContext context) {
     return Button(
       action: '',
-      function: 'equal',
-      fontSize: 18,
+      function: 'Equal',
+      fontSize: 25,
       color: color,
       label: '=',
     );
